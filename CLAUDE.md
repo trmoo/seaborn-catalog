@@ -97,6 +97,14 @@ npm run build          # dist/index.html 한 파일 (약 124KB, 바깥 자원 0�
   `npm test` 85가지 · `check:syntax` · `check:code` 333개 모두 통과. 빌드 `dist/index.html` 약 124KB, 바깥 자원 0개.
   브라우저에서 탭 5개 · 함수 화면 21개 · 자세히 보기 22개를 모두 열어 오류가 없는 것,
   휴대폰 너비(375px)에서 가로 넘침이 0 인 것을 확인했다.
+- **배포 완료 (2026-09-19)** — https://github.com/trmoo/seaborn-catalog (Pages: https://trmoo.github.io/seaborn-catalog/)
+  저장소는 사용자가 **미리 빈 저장소로 만들어 두었고 Pages 가 이미 「GitHub Actions」(`build_type: workflow`)** 였다.
+  그래서 첫 푸시 한 번에 우리 워크플로 하나만 돌았다(Jekyll 잡 없음). build 잡의 **코드 333개 실제 실행** 단계도
+  깃허브 서버(리눅스, 파이썬 3.12)에서 통과했다.
+  배포본 **123,742바이트**, MD5 `b2a17c7a53ad35462f3380f7db55cce4` 가 로컬 `dist/index.html` 과 같다.
+  ⚠ 배포 확인은 Actions 의 「성공」만 보지 말고 `curl -s <주소> -o x -w "%{size_download}"` 로 크기와 해시를 잴 것.
+  포털 `comedu_portal/` 「[데이터] 학습 자료」의 PyDataset 데이터 도감 바로 아래에 🌊 로 올렸다.
+  ⚠ 저장소 설명(description)이 한글이 깨진 채로 만들어져 있다(원래 글을 되살릴 수 없어 손대지 않았다).
 - **다음으로 미룬 것**
   - 실제 그래프 미리보기 그림 (값에서 나온 그림이라 방침상 보류 — 지금은 지어낸 숫자의 도식)
   - seaborn 0.12 이후의 `objects` 인터페이스(`so.Plot`) 소개
