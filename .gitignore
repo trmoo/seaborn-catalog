@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.vite/
+
+# 파이썬 도구 찌꺼기
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# seaborn 이 받아 오는 원본 자료는 저장소에 넣지 않는다.
+# (seaborn-data 저장소의 것이고, npm run data 가 언제든 다시 받는다)
+tools/.cache/
+*.csv
+
+# npm run check:code 가 만드는 중간 파일
+tools/.codes.json
+
+# 편집기
+.vscode/
+.idea/
+*.swp
