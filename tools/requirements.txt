@@ -1,0 +1,6 @@
+# Seaborn 데이터 도감 — 자료 만들기(npm run data)·코드 검증(npm run check:code)에 쓰는 파이썬 패키지
+# 코랩과 같은 줄기로 맞춘다. 판다스 3 이나 matplotlib 3.11 로 돌리면 학생 화면과 결과가 달라진다.
+seaborn==0.13.2
+pandas>=2.2,<2.3
+matplotlib>=3.10,<3.11
+scipy

@@ -1,0 +1,22 @@
+{
+  "name": "seaborn-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "Seaborn 데이터 도감 — seaborn 예제 데이터 22개와 그래프 함수 21개를 함께 찾아보는 수업용 앱",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test/run.mjs",
+    "check:syntax": "node tools/check-syntax.mjs",
+    "check:code": "node tools/dump-code.mjs && node tools/py.mjs tools/verify_code.py",
+    "data": "node tools/py.mjs tools/build_data.py"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.0.3"
+  }
+}
